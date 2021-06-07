@@ -9,70 +9,7 @@
     <title>StarBug</title>
 </head>
 <body>
-<div class="container">
-    <div class="circle"></div>
-    <div class="circle2"></div>
-    <nav>
-        <div class="logo">
-            <img src="img/starbucks-logo.png" alt="">
-        </div>
-
-        <ul>
-            <li><a href="" class="cool-link">Home</a></li>
-            <li><a href="" class="cool-link">Menu</a></li>
-            <li><a href="" class="cool-link">What's New</a></li>
-            <li><a href="" class="cool-link">Contact</a></li>
-        </ul>
-
-        <div class="menu-toggle">
-            <input type="checkbox" name="" id="">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
-
-    <div class="content">
-        <div class="text">
-            <h1>It's not just Coffe <br> It's <span>Starbucks</span></h1>   
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus saepe quo laudantium nemo necessitatibus inventore maxime optio possimus eius dicta fugiat ipsam, mollitia adipisci magni.</p>
-            <div class="button">
-                <a href="">LEARN MORE</a>
-            </div>
-        </div>
-        <div class="thumbnail">
-            <img src="img/img1.png" class="starbucks" alt="">
-        </div>
-    </div>
-    <ul class="thumb">
-        <li><img src="img/thumb1.png" onclick="imgSlider('img/img1.png');changeCircleColor('#017143') "></li>
-        <li><img src="img/thumb2.png" onclick="imgSlider('img/img2.png');changeCircleColor('#d753b1') "></li>
-        <li><img src="img/thumb3.png" onclick="imgSlider('img/img3.png');changeCircleColor('#eb7495') "></li>
-    </ul>
-    <ul class="sosmed">
-        <li><a href=""><img src="img/facebook.png" alt=""></a></li>
-        <li><a href=""><img src="img/twitter.png" alt=""></a></li>
-        <li><a href=""><img src="img/instagram.png" alt=""></a></li>
-    </ul>
-</div>
-
-<script type="text/javascript">
-function imgSlider(anything){
-    document.querySelector('.starbucks').src = anything;
-}
-
-function changeCircleColor(color){
-    const circle = document.querySelector('.circle');
-    circle.style.background = color;
-}
-
-const MenuToggle = document.querySelector('.menu-toggle input');
-const nav = document.querySelector('nav ul');
-
-MenuToggle.addEventListener('click', function() {
-    nav.classList.toggle('slide');
-});
-</script>
+<h1>Hello. World!<h1>
 
 </body>
 </html>
