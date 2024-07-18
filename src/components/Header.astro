@@ -1,6 +1,5 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
 ---
 
 <header>
@@ -129,7 +128,7 @@ import { SITE_TITLE } from '../consts';
     document.documentElement.classList.add('dark');
   }
 
-  window.localStorage.setItem('theme', theme);
+  if(theme) window.localStorage.setItem('theme', theme);
 
   const handleToggleClick = () => {
     const element = document.documentElement;
@@ -139,5 +138,9 @@ import { SITE_TITLE } from '../consts';
     localStorage.setItem("theme", isDark ? "dark" : "light");
   }
 
-  document.getElementById("themeToggle").addEventListener("click", handleToggleClick);
+  const themeToggle = document.getElementById("themeToggle");
+
+if (themeToggle) {
+    themeToggle.addEventListener("click", handleToggleClick);
+}
 </script>

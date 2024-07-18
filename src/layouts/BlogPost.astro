@@ -107,6 +107,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
     const url = window.location.href;
     const title = document.title;
 
+if (facebook && twitter && pinterest && whatsapp && linkedin && email && hackernews) {
     facebook.addEventListener('click', () => {
         window.open(`https://www.facebook.com/dialog/feed?link=${url}`, '_blank');
     });
@@ -128,4 +129,5 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
     hackernews.addEventListener('click', () => {
         window.open(`https://news.ycombinator.com/submitlink?u=${url}&t=${title}`, '_blank');
     });
+}
 </script>
