@@ -1322,4 +1322,4 @@ The journey to API security is ongoing. It requires vigilance, adaptability, and
 
 Remember, in the world of API security, knowledge is not just power—it's protection. Stay informed, stay vigilant, and keep building secure APIs that can stand up to the challenges of our interconnected digital world.
 
-**Hopefully helpful, Farrel Nikoson.**
+**Hopefully helpful, Farrel Nikoson 😁.**
