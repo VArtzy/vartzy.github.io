@@ -1,4 +1,4 @@
-# Astro Starter Kit: Blog
+# VArtzy Portofolio with Astro
 
 ```sh
 npm create astro@latest -- --template blog
