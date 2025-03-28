@@ -128,4 +128,4 @@ symbol repeated to a catchy tune.
   606  rm -r contacts/
   607  ls
   608  history
-root@main:~/worldbanc/private#
+root@main:~/worldbanc/private# stress coy
