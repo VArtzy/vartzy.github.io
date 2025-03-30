@@ -130,3 +130,132 @@ symbol repeated to a catchy tune.
   608  history
 root@main:~/worldbanc/private# stress coy
 semoga cepet move on
+
+Run :checkhealth for more info
+root@main:~/worldbanc/private/bin# cd ../../public/
+root@main:~/worldbanc/public# nvim company_info.md
+root@main:~/worldbanc/public# cat company_info.md
+# Company Info
+
+* Company Name: Worldbanc Inc.
+* Company Address: 1234 Main St, New York, NY 10001
+* Company Phone: 212-555-1212
+* Company Email: worldbanc@example.com
+* Company Password: REDACTED
+root@main:~/worldbanc/public# which nvim
+/usr/bin/nvim
+root@main:~/worldbanc/public# curl -sS https://webi.sh/lsd | sh; \
+> source ~/.config/envman/PATH.env
+
+
+>>> Welcome to Webi! - modern tools, instant installs.  <<<
+    We expect your experience to be absolutely perfect!
+
+    Success? Star it!   https://github.com/webinstall/webi-installers
+    Problem? Report it: https://github.com/webinstall/webi-installers/issues
+                        (your system is GNU/Linux/x86_64 with libc & curl+wget)
+
+Bootstrapping Webi
+    Downloading https://webi.sh/packages/webi/webi.sh
+        to ~/.local/bin/webi
+    Running ~/.local/bin/webi lsd@stable
+
+Installing lsd ...
+    Found  ~/.local/bin
+    Initializing ~/.config/envman/
+    Edit ~/.profile to source ~/.config/envman/load.sh
+    Edit ~/.bashrc to source ~/.config/envman/load.sh
+    Downloading lsd from
+      https://github.com/lsd-rs/lsd/releases/download/v1.1.5/lsd-v1.1.5-x86_64-unknown-linux-musl.tar.gz
+    Saved as ~/Downloads/webi/lsd/1.1.5/lsd-v1.1.5-x86_64-unknown-linux-musl.tar.gz
+    Extracting ~/Downloads/webi/lsd/1.1.5/lsd-v1.1.5-x86_64-unknown-linux-musl.tar.gz
+    Installing to ~/.local/opt/lsd-v1.1.5/bin/lsd
+
+    Installed 'lsd v1.1.5' as ~/.local/bin/lsd
+
+    Edit ~/.config/envman/PATH.env to add:
+        ~/.local/bin
+
+>>> ACTION REQUIRED <<<
+        Copy, paste & run the following command:
+        source ~/.config/envman/PATH.env
+        (newly opened terminal windows will update automatically)
+
+root@main:~/worldbanc/public# lsd
+ company_info.md   pr_ideas.txt   products
+root@main:~/worldbanc/public# cd ../private/
+root@main:~/worldbanc/private# lsd --tree
+ .
+├──  bin
+│   ├──  genids.sh
+│   ├──  malicious.sh
+│   ├──  process_transactions.sh
+│   ├──  warn.sh
+│   └──  worldbanc.sh
+├──  cmd
+│   ├──  genlogs
+│   │   └──  main.go
+│   └──  gentransactions
+│       └──  main.go
+├──  customers
+│   └──  records.csv
+├──  key.txt
+├──  logs
+│   ├──  2024-01-10.log
+│   ├──  2024-01-11.log
+│   ├──  2024-01-12.log
+│   ├──  2024-01-13.log
+│   ├──  2024-01-14.log
+│   ├──  2024-01-15.log
+│   └──  2024-01-16.log
+└──  transactions
+    ├──  2020.csv
+    ├──  2021.csv
+    ├──  2022.csv
+    ├──  2023.csv
+    ├── 󰁯 backups
+    │   ├──  2020.csv
+    │   ├──  2021.csv
+    │   ├──  2022.csv
+    │   └──  2023.csv
+    ├──  error.txt
+    ├──  error2.txt
+    └──  hello.txt
+root@main:~/worldbanc/private# cd transactions/
+root@main:~/worldbanc/private/transactions# lsd --tree --classic
+.
+├── 2020.csv
+├── 2021.csv
+├── 2022.csv
+├── 2023.csv
+├── backups
+│   ├── 2020.csv
+│   ├── 2021.csv
+│   ├── 2022.csv
+│   └── 2023.csv
+├── error.txt
+├── error2.txt
+└── hello.txt
+root@main:~/worldbanc/private/transactions# lsd --tree
+ .
+├──  2020.csv
+├──  2021.csv
+├──  2022.csv
+├──  2023.csv
+├── 󰁯 backups
+│   ├──  2020.csv
+│   ├──  2021.csv
+│   ├──  2022.csv
+│   └──  2023.csv
+├──  error.txt
+├──  error2.txt
+└──  hello.txt
+root@main:~/worldbanc/private/transactions# exit
+logout
+There are stopped jobs.
+root@main:~/worldbanc/private/transactions# exit
+logout
+Connection to 146.190.111.51 closed.
+
+╭─ cmd     羽1h 35m 34s 527ms                                                   100   30, 15:24 
+╰─>
